@@ -1,4 +1,4 @@
-const PageObject = require('page-object')
+const ScreenPill = require('screen-pill')
 
 function GoogleSearchResults(driver) {
   this.setDriver(driver)
@@ -7,6 +7,6 @@ function GoogleSearchResults(driver) {
   return this
 }
 
-PageObject(GoogleSearchResults)
+ScreenPill(GoogleSearchResults)
 
 module.exports = GoogleSearchResults
