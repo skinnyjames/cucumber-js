@@ -1,0 +1,26 @@
+{
+  "name": "cucumber-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skinnyjames/cucumber-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skinnyjames/cucumber-js/issues"
+  },
+  "homepage": "https://github.com/skinnyjames/cucumber-js#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^4.2.1",
+    "page-object": "git+https://git@github.com/skinnyjames/page-object.git",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  }
+}
