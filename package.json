@@ -20,7 +20,7 @@
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "cucumber": "^4.2.1",
-    "page-object": "git+https://git@github.com/skinnyjames/page-object.git",
+    "screen-pill": "^1.0.0",
     "selenium-webdriver": "^4.0.0-alpha.1"
   }
 }
