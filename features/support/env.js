@@ -1,11 +1,13 @@
-const { setWorldConstructor } = require('cucumber')
+const { setWorldConstructor, setDefaultTimeout } = require('cucumber')
 const webdriver = require('selenium-webdriver')
 const driver = new webdriver.Builder().forBrowser('chrome').build()
-const PageFactory = require('screen-pill/page-factory')
+const PillFactory = require('screen-pill/dist/pill-factory')
+
+setDefaultTimeout(15000)
 
 function CustomWorld() {
   this.driver = driver
-  Object.assign(this, PageFactory)
 }
 
-setWorldConstructor(CustomWorld)
+let World = PillFactory(CustomWorld)
+setWorldConstructor(World)
